@@ -1,0 +1,32 @@
+  {{> header}}
+
+  <div id="mainpage">
+    <div id= "feed">
+      <div class = "tweee" id="newcomment">
+        <form id="newtweee">
+          <textarea name="in_tweee" id="in_tweee" placeholder="Say something, {{currentuser.name}}..." uid="{{currentuser._id}}" autofocus></textarea>
+          <div id="buttondiv"><button class="send" type="submit" id="tweeebutton">Tweee</button></div>
+        </form>
+      </div>
+
+      {{#each tweees}}
+      <div class="tweee" user="{{this.username}}" id="{{this._id}}" uid="{{this.userid}}">
+        <b>{{this.username}} said... </b> <button type="button" class="delete" id="{{this._id}}"user="{{this.username}}" uid="{{this.userid}}">Delete</button>
+        <p>{{this.words}}</p>
+      </div>
+      {{/each}}
+    </div>
+
+    <div id="users">
+      {{#each users}}
+      <div class="user" user="{{this.name}}" uid="{{this._id}}">
+        <div class="usernamedisp" user="{{this.name}}" uid="{{this._id}}"><b>{{this.name}}</b></div>
+      </div>
+      {{/each}}
+      <div class="user clhl" user="{{this.name}}">
+        <div id="clearuserhl" user="clearhighlight"><b>Clear Highlight</b></div>
+      </div>
+    </div>
+
+  </div>
+

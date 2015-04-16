@@ -1,0 +1,12 @@
+{{> header}}
+<div id="mainpage">
+  <div class="auth">
+    <h1> Login </h1>
+    <form id="simplelogin" method="POST" action="/users/auth/local">
+      <input type="text" id="username" name="username" autocomplete="off" placeholder="Username..." autofocus></input>
+      <input type="password" id="password" name="password" autocomplete="off" placeholder="Password..."></input>
+      <button type="submit" id="loginbutton">Log in!</button>
+    </form>
+    <div><a href="/auth/facebook">Sign in with Facebook</a></div>
+  </div>
+</div>
