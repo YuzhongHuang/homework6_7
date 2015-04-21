@@ -1,7 +1,7 @@
 var ids = {
   facebook: {
-    clientID: '954813531215720',
-    clientSecret: 'e3cb95cc40df15d086132b757c31b496',
+    clientID: '817662698315463',
+    clientSecret: '61bea842628a3141f1209daeab94f4f6',
     callbackURL: 'http://localhost:3000/auth/facebook/callback'
   }
 };

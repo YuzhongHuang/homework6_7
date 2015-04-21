@@ -167,3 +167,9 @@ mongoose.connect(mongoURI);
 app.listen(PORT, function() {
   console.log("Application running on port:", PORT);
 });
+
+process.on('uncaughtException', function(err) {
+  console.log(err);
+  app.kill();
+  process.kill();
+});

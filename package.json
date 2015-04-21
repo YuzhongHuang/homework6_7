@@ -1,22 +1,13 @@
 {
-  "name": "cheepr-premium",
+  "name": "Tweee",
   "version": "1.0.0",
-  "description": "A trendy new social media sensation. \"cheepr: Like twitter, but cheepr.\"",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "cheepr",
-    "trendy",
-    "cool",
-    "best",
-    "awesome",
-    "alright",
-    "okay"
-  ],
-  "author": "Ryan Eggert",
-  "license": "ISC",
+  "author": "Yuzhong Huang",
+  "license": "",
   "dependencies": {
     "body-parser": "^1.11.0",
     "cookie-parser": "^1.3.3",
@@ -24,7 +15,7 @@
     "express-handlebars": "^1.1.0",
     "express-session": "^1.10.2",
     "express-sessions": "^1.0.5",
-    "mongoose": "^3.8.23",
+    "mongoose": "3.8",
     "morgan": "^1.5.1",
     "passport": "^0.2.1",
     "passport-facebook": "^1.0.3",
